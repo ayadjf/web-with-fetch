@@ -1,0 +1,121 @@
+/* Dashboard Container */
+.dashboard-wrapper {
+  padding: 2rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #0f172a;
+  text-align: left;
+}
+
+/* Dashboard Cards Container */
+.dashboard-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+
+
+/* For PieChart Card */
+.dashboard-card:nth-child(1) {
+  width: 100%;
+  max-width: 300px; /* Limit the Pie Chart card's width */
+}
+
+/* For BarChart Card */
+.dashboard-card:nth-child(2) {
+  width: 100%;
+  max-width: 900px; /* Limit the Bar Chart card's width */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-card {
+    width: 100%;
+    max-width: 100%; /* Ensure cards occupy full width on small screens */
+    margin-bottom: 1rem;
+  }
+}
+.dashboard-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-align title */
+}
+
+.chart-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-legend {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.legend-color {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.dashboard-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+}
+
+.chart-icon {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background-color: #f4f1ff;
+  padding: 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+}
